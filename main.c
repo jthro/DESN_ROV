@@ -4,7 +4,6 @@
 #include "hardware/gpio.h"
 #include "hardware/pwm.h"
 #include "pico/binary_info.h"
-#include "pico/multicore.h"
 #include "pico/time.h"
 #include "pico/cyw43_arch.h"
 
@@ -23,12 +22,7 @@ int main() {
 
     cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
 
-    gpio_set_function(2, GPIO_FUNC_PWM);
-    gpio_set_function(4, GPIO_FUNC_PWM);
-    gpio_set_function(6, GPIO_FUNC_PWM);
-
     gpio_set_function(8, GPIO_FUNC_PWM);
-    
     
     uint slice_num_2 = pwm_gpio_to_slice_num(2);
     uint slice_num_4 = pwm_gpio_to_slice_num(4);
@@ -72,6 +66,9 @@ int main() {
         pwm_set_gpio_level(8, 976 + (i*976)/180);
         sleep_ms(10);
     }
+
+    const float conversion_factor = 3.3f / (1 << 12);
+
     while (1) {
         tight_loop_contents();;
     }
