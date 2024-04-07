@@ -1,0 +1,59 @@
+
+#include <stdio.h>
+#include "pico/stdlib.h"
+#include "hardware/gpio.h"
+#include "hardware/pwm.h"
+#include "pico/binary_info.h"
+#include "pico/multicore.h"
+#include "pico/time.h"
+#include "pico/cyw43_arch.h"
+
+const uint LED_PIN = CYW43_WL_GPIO_LED_PIN;
+
+int main() {
+    bi_decl(bi_program_description("This is a test binary."));
+    bi_decl(bi_1pin_with_name(LED_PIN, "On-board LED"));
+
+    stdio_init_all();
+
+    if (cyw43_arch_init()) {
+        printf("Wi-Fi init failed");
+        return -1;
+    }
+
+    cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
+
+    gpio_set_function(1, GPIO_FUNC_PWM);
+    gpio_set_function(2, GPIO_FUNC_PWM);
+    gpio_set_function(4, GPIO_FUNC_PWM);
+    
+    pwm_set_clkdiv(1, 256.f);
+    pwm_set_clkdiv(2, 256.f);
+    pwm_set_clkdiv(4, 256.f);
+
+    uint slice_num_2 = pwm_gpio_to_slice_num(1);
+    uint slice_num_4 = pwm_gpio_to_slice_num(2);
+    uint slice_num_6 = pwm_gpio_to_slice_num(4);
+   
+    pwm_set_enabled(slice_num_1, true);
+    pwm_set_enabled(slice_num_2, true);
+    pwm_set_enabled(slice_num_4, true);
+
+    pwm_set_wrap(slice_num_1, 976);
+    pwm_set_wrap(slice_num_2, 976);
+    pwm_set_wrap(slice_num_4, 976);
+
+    pwm_set_gpio_level(1, 976);
+    pwm_set_gpio_level(2, 976);
+    pwm_set_gpio_level(4, 976);
+
+    sleep_ms(3000);
+
+    pwm_set_gpio_level(1, 488);
+    pwm_set_gpio_level(2, 488);
+    pwm_set_gpio_level(4, 488);
+
+    while (1) {
+        tight_loop_contents();;
+    }
+}
