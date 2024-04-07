@@ -1510,6 +1510,53 @@ CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.obj: /
   /usr/lib/gcc/arm-none-eabi/13.2.0/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.0/include/stdint.h
 
+CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c \
+  generated/pico_base/pico/config_autogen.h \
+  generated/pico_base/pico/version.h \
+  /home/jthro/pico/pico-sdk/src/boards/include/boards/pico_w.h \
+  /home/jthro/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/jthro/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /home/jthro/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  /home/jthro/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/jthro/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/jthro/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
+  /home/jthro/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/jthro/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/_newlib_version.h \
+  /usr/arm-none-eabi/include/assert.h \
+  /usr/arm-none-eabi/include/machine/_default_types.h \
+  /usr/arm-none-eabi/include/machine/ieeefp.h \
+  /usr/arm-none-eabi/include/newlib.h \
+  /usr/arm-none-eabi/include/stdint.h \
+  /usr/arm-none-eabi/include/sys/_intsup.h \
+  /usr/arm-none-eabi/include/sys/_stdint.h \
+  /usr/arm-none-eabi/include/sys/cdefs.h \
+  /usr/arm-none-eabi/include/sys/config.h \
+  /usr/arm-none-eabi/include/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.0/include/stdbool.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.0/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.0/include/stdint.h
+
 CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
@@ -2862,18 +2909,10 @@ CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_mal
   /home/jthro/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
   /home/jthro/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
   /home/jthro/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
-  /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
-  /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
-  /home/jthro/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
-  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
-  /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
-  /home/jthro/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
-  /home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
-  /home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
   /usr/arm-none-eabi/include/_ansi.h \
@@ -3536,11 +3575,6 @@ CMakeFiles/main.dir/main.c.obj: /home/jthro/pico/octonauts/main.c \
   /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
   /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
   /home/jthro/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
-  /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
-  /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
-  /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
-  /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/sem.h \
-  /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h \
   /home/jthro/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
@@ -3565,14 +3599,12 @@ CMakeFiles/main.dir/main.c.obj: /home/jthro/pico/octonauts/main.c \
   /home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
-  /home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/include/pico/async_context.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/include/cyw43_configport.h \
-  /home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
@@ -3604,8 +3636,6 @@ CMakeFiles/main.dir/main.c.obj: /home/jthro/pico/octonauts/main.c \
   /usr/lib/gcc/arm-none-eabi/13.2.0/include/stdint.h
 
 
-/home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h:
-
 /home/jthro/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h:
 
 /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h:
@@ -3628,7 +3658,7 @@ CMakeFiles/main.dir/main.c.obj: /home/jthro/pico/octonauts/main.c \
 
 /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h:
 
-/usr/arm-none-eabi/include/stdlib.h:
+/home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
 
 /usr/arm-none-eabi/include/machine/stdlib.h:
 
@@ -3774,6 +3804,12 @@ generated/pico_base/pico/version.h:
 
 /home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.h:
 
+/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:
+
+/home/jthro/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c:
+
+/home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
+
 /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
 
 /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
@@ -3781,6 +3817,10 @@ generated/pico_base/pico/version.h:
 /home/jthro/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
 
 /home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_debug_pins.h:
+
+/usr/arm-none-eabi/include/unistd.h:
+
+/home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
 
 /home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43.h:
 
@@ -3822,8 +3862,6 @@ generated/pico_base/pico/version.h:
 
 /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h:
 
-/usr/arm-none-eabi/include/stdint.h:
-
 /home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h:
 
 /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
@@ -3847,6 +3885,10 @@ generated/pico_base/pico/version.h:
 /home/jthro/pico/pico-sdk/lib/tinyusb/src/tusb.h:
 
 /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h:
+
+/home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h:
+
+/usr/arm-none-eabi/include/machine/_default_types.h:
 
 /home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_btbus.h:
 
@@ -3952,12 +3994,6 @@ generated/pico_base/pico/version.h:
 
 /home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c:
 
-/home/jthro/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c:
-
-/home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
-
-/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:
-
 /home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c:
 
 /home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:
@@ -3969,6 +4005,10 @@ generated/pico_base/pico/version.h:
 /usr/arm-none-eabi/include/sys/_pthreadtypes.h:
 
 /usr/arm-none-eabi/include/limits.h:
+
+/usr/arm-none-eabi/include/stdlib.h:
+
+/home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h:
 
 /home/jthro/pico/octonauts/main.c:
 
@@ -4004,6 +4044,18 @@ generated/pico_base/pico/version.h:
 
 /home/jthro/pico/pico-sdk/src/common/pico_util/include/pico/util/queue.h:
 
+/home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c:
+
+/home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h:
+
+/usr/arm-none-eabi/include/machine/types.h:
+
+/usr/arm-none-eabi/include/stdint.h:
+
+/home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h:
+
+/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c:
+
 /home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h:
 
 /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h:
@@ -4031,8 +4083,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h:
 
 /home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h:
-
-/home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
 
 /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h:
 
@@ -4065,10 +4115,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 /home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c:
 
 /usr/lib/gcc/arm-none-eabi/13.2.0/include/float.h:
-
-/usr/arm-none-eabi/include/machine/_default_types.h:
-
-/home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h:
 
 /home/jthro/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:
 
@@ -4116,15 +4162,9 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 /home/jthro/pico/pico-sdk/lib/cyw43-driver/firmware/cyw43_btfw_43439.h:
 
-/home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
-
-/usr/arm-none-eabi/include/unistd.h:
-
 /home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.h:
 
 /home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c:
-
-/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c:
 
 /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h:
 
@@ -4151,8 +4191,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
 
 /usr/arm-none-eabi/include/machine/time.h:
-
-/usr/arm-none-eabi/include/machine/types.h:
 
 /usr/arm-none-eabi/include/sys/_timeval.h:
 

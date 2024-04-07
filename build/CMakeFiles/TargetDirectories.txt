@@ -1,4 +1,5 @@
 /home/jthro/pico/octonauts/build/CMakeFiles/main.dir
+/home/jthro/pico/octonauts/build/CMakeFiles/led_serial_test.dir
 /home/jthro/pico/octonauts/build/CMakeFiles/ELF2UF2Build.dir
 /home/jthro/pico/octonauts/build/CMakeFiles/edit_cache.dir
 /home/jthro/pico/octonauts/build/CMakeFiles/rebuild_cache.dir

@@ -75,7 +75,4 @@ CMakeFiles/main.dir/main.c.obj: /home/jthro/pico/octonauts/main.c \
  /usr/arm-none-eabi/include/sys/string.h \
  /home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_country.h \
  /home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/include/pico/async_context.h \
- /home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h \
- /home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
- /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
- /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h
+ /home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h

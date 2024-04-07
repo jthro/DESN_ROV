@@ -130,6 +130,19 @@ main/fast:
 .PHONY : main/fast
 
 #=============================================================================
+# Target rules for targets named led_serial_test
+
+# Build rule for target.
+led_serial_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 led_serial_test
+.PHONY : led_serial_test
+
+# fast build rule for target.
+led_serial_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/build
+.PHONY : led_serial_test/fast
+
+#=============================================================================
 # Target rules for targets named ELF2UF2Build
 
 # Build rule for target.
@@ -213,6 +226,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj: home/jthro/pico/pi
 # target to build an object file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
 
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i: home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
@@ -221,6 +235,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i: home/jthro/pico/pico
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
 
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s: home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
@@ -229,6 +244,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s: home/jthro/pico/pico
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
 
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj: home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
@@ -237,6 +253,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj: home/jthro/pico/pico
 # target to build an object file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
 
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i: home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
@@ -245,6 +262,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i: home/jthro/pico/pico-s
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
 
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.s: home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
@@ -253,6 +271,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.s: home/jthro/pico/pico-s
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
 
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj: home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
@@ -261,6 +280,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj: home/jthro/pico/pi
 # target to build an object file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
 
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i: home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
@@ -269,6 +289,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i: home/jthro/pico/pico
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
 
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s: home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
@@ -277,6 +298,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s: home/jthro/pico/pico
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
 
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj: home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
@@ -285,6 +307,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj: home/jthro/pico/p
 # target to build an object file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
 
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i: home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
@@ -293,6 +316,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i: home/jthro/pico/pic
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
 
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s: home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
@@ -301,6 +325,7 @@ home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s: home/jthro/pico/pic
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
 .PHONY : home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
 
 home/jthro/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/jthro/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
@@ -741,6 +766,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/jthro/p
 # target to build an object file
 home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -749,6 +775,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/jthro/pic
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -757,6 +784,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/jthro/pic
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -765,6 +793,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/jthro/pico/pic
 # target to build an object file
 home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -773,6 +802,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/jthro/pico/pico-
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -781,6 +811,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/jthro/pico/pico-
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -789,6 +820,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/jthro/pico/pico-sd
 # target to build an object file
 home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.i: home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -797,6 +829,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.i: home/jthro/pico/pico-sdk/
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.s: home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -805,6 +838,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.s: home/jthro/pico/pico-sdk/
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/jthro/pico/pico-sdk/src/common/pico_sync/sem.obj: home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -813,6 +847,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/sem.obj: home/jthro/pico/pico-sdk/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 home/jthro/pico/pico-sdk/src/common/pico_sync/sem.i: home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -821,6 +856,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/sem.i: home/jthro/pico/pico-sdk/sr
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/jthro/pico/pico-sdk/src/common/pico_sync/sem.s: home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -829,6 +865,7 @@ home/jthro/pico/pico-sdk/src/common/pico_sync/sem.s: home/jthro/pico/pico-sdk/sr
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/jthro/pico/pico-sdk/src/common/pico_time/time.obj: home/jthro/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -837,6 +874,7 @@ home/jthro/pico/pico-sdk/src/common/pico_time/time.obj: home/jthro/pico/pico-sdk
 # target to build an object file
 home/jthro/pico/pico-sdk/src/common/pico_time/time.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_time/time.c.obj
 
 home/jthro/pico/pico-sdk/src/common/pico_time/time.i: home/jthro/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -845,6 +883,7 @@ home/jthro/pico/pico-sdk/src/common/pico_time/time.i: home/jthro/pico/pico-sdk/s
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/common/pico_time/time.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_time/time.c.i
 
 home/jthro/pico/pico-sdk/src/common/pico_time/time.s: home/jthro/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -853,6 +892,7 @@ home/jthro/pico/pico-sdk/src/common/pico_time/time.s: home/jthro/pico/pico-sdk/s
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/common/pico_time/time.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_time/time.c.s
 
 home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -861,6 +901,7 @@ home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/jthro/pic
 # target to build an object file
 home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -869,6 +910,7 @@ home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/jthro/pico/
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -877,6 +919,7 @@ home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/jthro/pico/
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/jthro/pico/pico-sdk/src/common/pico_util/datetime.obj: home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -885,6 +928,7 @@ home/jthro/pico/pico-sdk/src/common/pico_util/datetime.obj: home/jthro/pico/pico
 # target to build an object file
 home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 home/jthro/pico/pico-sdk/src/common/pico_util/datetime.i: home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -893,6 +937,7 @@ home/jthro/pico/pico-sdk/src/common/pico_util/datetime.i: home/jthro/pico/pico-s
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/jthro/pico/pico-sdk/src/common/pico_util/datetime.s: home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -901,6 +946,7 @@ home/jthro/pico/pico-sdk/src/common/pico_util/datetime.s: home/jthro/pico/pico-s
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/jthro/pico/pico-sdk/src/common/pico_util/pheap.obj: home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -909,6 +955,7 @@ home/jthro/pico/pico-sdk/src/common/pico_util/pheap.obj: home/jthro/pico/pico-sd
 # target to build an object file
 home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 home/jthro/pico/pico-sdk/src/common/pico_util/pheap.i: home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -917,6 +964,7 @@ home/jthro/pico/pico-sdk/src/common/pico_util/pheap.i: home/jthro/pico/pico-sdk/
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/jthro/pico/pico-sdk/src/common/pico_util/pheap.s: home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -925,6 +973,7 @@ home/jthro/pico/pico-sdk/src/common/pico_util/pheap.s: home/jthro/pico/pico-sdk/
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/jthro/pico/pico-sdk/src/common/pico_util/queue.obj: home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -933,6 +982,7 @@ home/jthro/pico/pico-sdk/src/common/pico_util/queue.obj: home/jthro/pico/pico-sd
 # target to build an object file
 home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 home/jthro/pico/pico-sdk/src/common/pico_util/queue.i: home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -941,6 +991,7 @@ home/jthro/pico/pico-sdk/src/common/pico_util/queue.i: home/jthro/pico/pico-sdk/
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 home/jthro/pico/pico-sdk/src/common/pico_util/queue.s: home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -949,6 +1000,7 @@ home/jthro/pico/pico-sdk/src/common/pico_util/queue.s: home/jthro/pico/pico-sdk/
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
@@ -981,6 +1033,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/jthro/pic
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -989,6 +1042,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/jthro/pico/
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -997,6 +1051,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/jthro/pico/
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -1005,6 +1060,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/jthro/p
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -1013,6 +1069,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/jthro/pic
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -1021,6 +1078,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/jthro/pic
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -1029,6 +1087,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/jthro
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
@@ -1037,6 +1096,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: home/jthro/pico/pi
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
@@ -1045,6 +1105,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/jthro/pico/pico
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
@@ -1053,6 +1114,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/jthro/pico/pico
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
@@ -1061,6 +1123,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj: home/j
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
@@ -1069,6 +1132,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i: home/jth
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
@@ -1077,6 +1141,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s: home/jth
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
@@ -1085,6 +1150,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/jthro/pic
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -1093,6 +1159,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/jthro/pico/
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -1101,6 +1168,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/jthro/pico/
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -1109,6 +1177,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/jthro/pico/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -1117,6 +1186,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/jthro/pico/pi
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -1125,6 +1195,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/jthro/pico/pi
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -1133,6 +1204,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/jthro/pico/pi
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -1141,6 +1213,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/jthro/pico/pico
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -1149,6 +1222,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/jthro/pico/pico
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -1157,6 +1231,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
@@ -1165,6 +1240,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: home/jthro/pico/pi
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
@@ -1173,6 +1249,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/jthro/pico/pico
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
@@ -1181,6 +1258,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/jthro/pico/pico
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -1189,6 +1267,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/jthro/pico/pi
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1197,6 +1276,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/jthro/pico/pico
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1205,6 +1285,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/jthro/pico/pico
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -1213,6 +1294,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/jthro/pico/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1221,6 +1303,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/jthro/pico/pi
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1229,6 +1312,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/jthro/pico/pi
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -1237,6 +1321,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/jthro/pic
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1245,6 +1330,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/jthro/pico/
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1253,6 +1339,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/jthro/pico/
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -1261,6 +1348,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/jthro/pico/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1269,6 +1357,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/jthro/pico/pi
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1277,6 +1366,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/jthro/pico/pi
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -1285,6 +1375,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/jthro/pico/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1293,6 +1384,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/jthro/pico/pi
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1301,6 +1393,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/jthro/pico/pi
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -1309,6 +1402,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/jth
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1317,6 +1411,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/jthro
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1325,6 +1420,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/jthro
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -1333,6 +1429,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/jthro/pico/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1341,6 +1438,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/jthro/pico/pi
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1349,6 +1447,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/jthro/pico/pi
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
@@ -1357,6 +1456,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.ob
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
@@ -1365,6 +1465,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i:
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
@@ -1373,6 +1474,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.s:
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
@@ -1381,6 +1483,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threads
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
@@ -1389,6 +1492,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threads
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
@@ -1397,6 +1501,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threads
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -1405,6 +1510,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/jth
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -1413,6 +1519,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/jthro/pic
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1421,6 +1528,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/jthro/pico/
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1429,6 +1537,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/jthro/pico/
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
@@ -1437,6 +1546,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj: home/jth
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
@@ -1445,6 +1555,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i: home/jthro
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
@@ -1453,6 +1564,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s: home/jthro
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
@@ -1461,6 +1573,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj:
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
@@ -1469,6 +1582,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i: h
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
@@ -1477,6 +1591,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s: h
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
@@ -1485,6 +1600,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj: hom
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
@@ -1493,6 +1609,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i: home/
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
@@ -1501,6 +1618,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s: home/
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
@@ -1509,6 +1627,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_ba
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
@@ -1517,6 +1636,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_ba
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
@@ -1525,6 +1645,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_ba
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
@@ -1533,6 +1654,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_s
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
@@ -1541,6 +1663,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_s
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
@@ -1549,6 +1672,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_s
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
@@ -1557,6 +1681,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_s
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
@@ -1565,6 +1690,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_s
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
@@ -1573,6 +1699,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_s
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
@@ -1581,6 +1708,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj:
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
@@ -1589,6 +1717,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i: h
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
@@ -1597,6 +1726,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s: h
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
@@ -1605,6 +1735,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj: home
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
@@ -1613,6 +1744,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i: home/j
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
@@ -1621,6 +1753,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s: home/j
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -1629,6 +1762,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/jthro/pic
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -1637,6 +1771,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/jthro
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -1645,6 +1780,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/jt
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -1653,6 +1789,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/jthr
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -1661,6 +1798,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/jthr
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -1669,6 +1807,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/jthro/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1677,6 +1816,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/jthro/pi
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1685,6 +1825,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/jthro/pi
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1693,6 +1834,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
@@ -1725,6 +1867,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/jthro/p
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1733,6 +1876,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/jthr
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1741,6 +1885,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/jthro/
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1749,6 +1894,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/jthro/
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1757,6 +1903,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/jthro/pi
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1765,6 +1912,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/jthro/pico
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1773,6 +1921,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/jthro/pico
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1781,6 +1930,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/j
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1789,6 +1939,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj:
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1797,6 +1948,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/jthro/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1805,6 +1957,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/jthro/pi
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1813,6 +1966,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/jthro/pi
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1821,6 +1975,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/jth
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1829,6 +1984,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/jthro/p
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1837,6 +1993,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/jthro/pic
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1845,6 +2002,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/jthro/pic
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1853,6 +2011,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/jthro/pico/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1861,6 +2020,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/jthro/pico/pi
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1869,6 +2029,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/jthro/pico/pi
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1877,6 +2038,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/jthro/pic
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1885,6 +2047,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/jthro/pico/
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1893,6 +2056,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/jthro/pico/
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1901,6 +2065,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1909,6 +2074,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/j
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1917,6 +2083,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/j
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1925,6 +2092,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/jthro/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1933,6 +2101,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1941,6 +2110,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/jt
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1949,6 +2119,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/jt
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1957,6 +2128,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/jthro/pico/pi
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1965,6 +2137,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/jthro/pico/pico
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1973,7 +2146,32 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/jthro/pico/pico
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+
+home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
+
+# target to build an object file
+home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+
+home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
+
+# target to preprocess a source file
+home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+
+home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
+
+# target to generate assembly for a file
+home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
@@ -2053,6 +2251,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/jthro/pico/
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -2061,6 +2260,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/jthro/pico/pi
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -2069,6 +2269,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/jthro/pico/pi
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
@@ -2077,6 +2278,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/jthro
 # target to build an object file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -2085,6 +2287,7 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/jthro/p
 # target to preprocess a source file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -2093,7 +2296,32 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/jthro/p
 # target to generate assembly for a file
 home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+
+led_serial_test.obj: led_serial_test.c.obj
+.PHONY : led_serial_test.obj
+
+# target to build an object file
+led_serial_test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/led_serial_test.c.obj
+.PHONY : led_serial_test.c.obj
+
+led_serial_test.i: led_serial_test.c.i
+.PHONY : led_serial_test.i
+
+# target to preprocess a source file
+led_serial_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/led_serial_test.c.i
+.PHONY : led_serial_test.c.i
+
+led_serial_test.s: led_serial_test.c.s
+.PHONY : led_serial_test.s
+
+# target to generate assembly for a file
+led_serial_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_serial_test.dir/build.make CMakeFiles/led_serial_test.dir/led_serial_test.c.s
+.PHONY : led_serial_test.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -2133,6 +2361,7 @@ help:
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... bs2_default"
+	@echo "... led_serial_test"
 	@echo "... main"
 	@echo "... home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj"
 	@echo "... home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i"
@@ -2355,6 +2584,9 @@ help:
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
+	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj"
+	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
+	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
@@ -2370,6 +2602,9 @@ help:
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... led_serial_test.obj"
+	@echo "... led_serial_test.i"
+	@echo "... led_serial_test.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -56,7 +56,7 @@ CMakeFiles/test.dir/test.c.obj: /home/jthro/pico/octonauts/test.c \
  /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
- /home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+ /home/jthro/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
  /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
  /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
  /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
