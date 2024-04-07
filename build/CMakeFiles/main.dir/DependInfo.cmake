@@ -43,7 +43,6 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_MALLOC=1"
   "LIB_PICO_MEM_OPS=1"
   "LIB_PICO_MEM_OPS_PICO=1"
-  "LIB_PICO_MULTICORE=1"
   "LIB_PICO_PLATFORM=1"
   "LIB_PICO_PRINTF=1"
   "LIB_PICO_PRINTF_PICO=1"
@@ -121,7 +120,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/jthro/pico/pico-sdk/lib/tinyusb/hw"
   "/home/jthro/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "/home/jthro/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
-  "/home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/include"
   "/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include"
   "/home/jthro/pico/pico-sdk/lib/cyw43-driver/src"
   "/home/jthro/pico/pico-sdk/lib/cyw43-driver/firmware"
@@ -132,6 +130,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/include"
   "/home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/include"
   "pico-sdk/src/rp2_common/pico_cyw43_driver"
+  "/home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/include"
   )
 
 # The set of dependency files which are needed:
@@ -167,6 +166,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/datetime.c.obj.d"
   "/home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/pheap.c.obj.d"
   "/home/jthro/pico/pico-sdk/src/common/pico_util/queue.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.obj.d"
+  "/home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d"
   "/home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "/home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "/home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj.d"
@@ -199,7 +199,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj.d"
   "/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj.d"
   "/home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d"
-  "/home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d"
   "/home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d"
   "/home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj.d"
   "/home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj" "gcc" "CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d"

@@ -64,13 +64,6 @@ CMakeFiles/main.dir/main.c.obj: /home/jthro/pico/octonauts/main.c \
  /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
  /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
  /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
- /home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
- /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h \
- /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/sem.h \
- /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
- /home/jthro/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
- /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
- /home/jthro/pico/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
  /home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch.h \
  /home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43.h \
  /home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_config.h \
@@ -82,4 +75,7 @@ CMakeFiles/main.dir/main.c.obj: /home/jthro/pico/octonauts/main.c \
  /usr/arm-none-eabi/include/sys/string.h \
  /home/jthro/pico/pico-sdk/lib/cyw43-driver/src/cyw43_country.h \
  /home/jthro/pico/pico-sdk/src/rp2_common/pico_async_context/include/pico/async_context.h \
- /home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h
+ /home/jthro/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h \
+ /home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
+ /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
+ /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h

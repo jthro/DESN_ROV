@@ -951,6 +951,30 @@ home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/jthro/pico/pico-sdk/src/common/pico_util/queue.c.s
 
+home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj
+
+# target to build an object file
+home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+
+home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i
+
+# target to preprocess a source file
+home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s
+
+# target to generate assembly for a file
+home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj
 
@@ -1799,30 +1823,6 @@ home/jthro/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
-home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj
-
-# target to build an object file
-home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-
-home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i: home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
-.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i
-
-# target to preprocess a source file
-home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
-.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
-
-home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s: home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
-.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s
-
-# target to generate assembly for a file
-home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
-.PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
-
 home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj
 
@@ -2227,6 +2227,9 @@ help:
 	@echo "... home/jthro/pico/pico-sdk/src/common/pico_util/queue.obj"
 	@echo "... home/jthro/pico/pico-sdk/src/common/pico_util/queue.i"
 	@echo "... home/jthro/pico/pico-sdk/src/common/pico_util/queue.s"
+	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj"
+	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i"
+	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s"
@@ -2333,9 +2336,6 @@ help:
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
-	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj"
-	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
-	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.i"
 	@echo "... home/jthro/pico/pico-sdk/src/rp2_common/pico_platform/platform.s"
