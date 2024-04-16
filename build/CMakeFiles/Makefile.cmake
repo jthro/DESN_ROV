@@ -255,6 +255,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/main.dir/DependInfo.cmake"
   "CMakeFiles/led_serial_test.dir/DependInfo.cmake"
+  "CMakeFiles/button_test.dir/DependInfo.cmake"
+  "CMakeFiles/analog_test.dir/DependInfo.cmake"
+  "CMakeFiles/run_motors_button.dir/DependInfo.cmake"
+  "CMakeFiles/run_servo_button.dir/DependInfo.cmake"
+  "CMakeFiles/calibrate_servo.dir/DependInfo.cmake"
   "CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"

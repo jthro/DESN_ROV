@@ -3577,6 +3577,7 @@ CMakeFiles/main.dir/main.c.obj: /home/jthro/pico/octonauts/main.c \
   /home/jthro/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
   /home/jthro/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
@@ -3587,6 +3588,7 @@ CMakeFiles/main.dir/main.c.obj: /home/jthro/pico/octonauts/main.c \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
@@ -3595,6 +3597,7 @@ CMakeFiles/main.dir/main.c.obj: /home/jthro/pico/octonauts/main.c \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
   /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
   /home/jthro/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \

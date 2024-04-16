@@ -60,6 +60,9 @@ CMakeFiles/main.dir/main.c.obj: /home/jthro/pico/octonauts/main.c \
  /home/jthro/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
  /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h \
  /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pwm.h \
+ /home/jthro/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
+ /home/jthro/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
+ /home/jthro/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h \
  /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
  /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
  /home/jthro/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
